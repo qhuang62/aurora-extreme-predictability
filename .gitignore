@@ -34,3 +34,11 @@ checkpoints/
 mlflow_tmp/
 aurora_mlflow_pyfunc/
 mlruns/
+
+# Research data files
+research/data/
+*.nc
+*.pkl
+*.h5
+*.grib
+*.zarr
