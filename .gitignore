@@ -42,3 +42,7 @@ research/data/
 *.h5
 *.grib
 *.zarr
+
+
+research/TC/data/
+
