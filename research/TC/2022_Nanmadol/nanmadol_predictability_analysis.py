@@ -3,7 +3,7 @@
 Aurora Predictability Analysis for Typhoon Nanmadol 2022
 
 This script demonstrates different aspects of Aurora's predictability:
-1. Free-running forecast from single initialization
+1. Free-running forecast from single initialization ERA5 data input + aurora 0.25 pretrained model only
 2. Multiple initialization times (00, 06, 12, 18 UTC)
 3. Forecast skill vs lead time analysis
 4. Track uncertainty visualization
@@ -242,9 +242,9 @@ def main():
                      fontsize=16, fontweight='bold', pad=20)
     
     plt.tight_layout()
-    fig_map.savefig('/scratch/qhuang62/aurora-extreme-predictability/research/TC/2022_Nanmadol/nanmadol_track_comparison.png', 
+    fig_map.savefig('/scratch/qhuang62/aurora-extreme-predictability/research/TC/2022_Nanmadol/prediction_output/nanmadol_track_comparison.png', 
                     dpi=300, bbox_inches='tight')
-    print("Track comparison map saved as '2022_Nanmadol/nanmadol_track_comparison.png'")
+    print("Track comparison map saved as 'prediction_output/nanmadol_track_comparison.png'")
     plt.close(fig_map)
     
     # Create visualization - PART 2: ERROR ANALYSIS
@@ -292,9 +292,9 @@ def main():
     ax_error.set_ylim(bottom=0)
     
     plt.tight_layout()
-    fig_error.savefig('/scratch/qhuang62/aurora-extreme-predictability/research/TC/2022_Nanmadol/nanmadol_error_analysis.png', 
+    fig_error.savefig('/scratch/qhuang62/aurora-extreme-predictability/research/TC/2022_Nanmadol/prediction_output/nanmadol_error_analysis.png', 
                      dpi=300, bbox_inches='tight')
-    print("Error analysis plot saved as '2022_Nanmadol/nanmadol_error_analysis.png'")
+    print("Error analysis plot saved as 'prediction_output/nanmadol_error_analysis.png'")
     plt.close(fig_error)
     
     # Print summary statistics
@@ -348,8 +348,8 @@ def main():
     
     print("\nPredictability Analysis Complete!")
     print("Generated files:")
-    print("• 2022_Nanmadol/nanmadol_track_comparison.png - Track map with different initializations")
-    print("• 2022_Nanmadol/nanmadol_error_analysis.png - Error growth vs lead time")
+    print("• prediction_output/nanmadol_track_comparison.png - Track map with different initializations")
+    print("• prediction_output/nanmadol_error_analysis.png - Error growth vs lead time")
 
 if __name__ == "__main__":
     main()

@@ -128,4 +128,76 @@ Research work on evaluating Aurora's predictability for tropical cyclones.
 
 ---
 
+## November 3, 2025 - Hurricane Sandy Implementation & Perturbation Experiments ✅
+
+**Objective**: Implement Hurricane Sandy 2012 prediction and conduct atmospheric perturbation experiments to test track sensitivity.
+
+**Infrastructure Accomplishments**:
+- **Sandy Setup**: Complete Hurricane Sandy 2012 prediction infrastructure parallel to Nanmadol
+- **Data**: ERA5 Sandy data for Oct 24, 2012 with both 06:00 and 12:00 UTC initialization times
+- **Extended Forecasts**: 7-day prediction capability (28 steps = 168 hours) to capture complete lifecycle including US landfall
+- **Memory Management**: Fixed CUDA memory issues with proper GPU cleanup and CPU fallback handling
+- **Output Organization**: Structured prediction_output/ directories for systematic file management
+
+**Perturbation Methodology Development**:
+- **Baseline Method**: Aurora 0.25° Pretrained with ERA5 data (control forecasts)
+- **Condensation Warming** (Yeongbin's approach): Gaussian heating pattern (σ=8°, ΔT≈2.49K) at 700-925 hPa
+- **Realistic Cloud Seeding** (Moyan's approach): Energy-balanced ice nucleation with temperature and humidity modifications
+- **Hybrid Implementation**: Combined approach using circular spatial mask with energy balance physics
+
+**Perturbation Physics Implementation**:
+
+*Condensation Warming*:
+- **Physics**: Pure latent heat release from water vapor condensation
+- **Formula**: ΔT = (Lv × δq) / cp ≈ 2.49 K
+- **Spatial**: Gaussian distribution (σ=8°) 
+- **Levels**: 700-925 hPa (steering flow layer)
+- **Variables**: Temperature only
+
+*Realistic Cloud Seeding*:
+- **Physics**: Ice nucleation with complete energy balance
+- **Energy**: ΔE = Lf×q_frozen - (Lv+Lf)×q_fallout (usually cooling)
+- **Spatial**: Circular mask (radius=300 km ≈ Gaussian σ=8°)
+- **Levels**: 500-700 hPa (supercooled layer)
+- **Variables**: Temperature + specific humidity
+- **Efficiency**: 30% freeze, 70% precipitate, 40% vertical coupling
+
+**Hurricane Sandy Results**:
+- **Initialization**: Oct 24, 2012 12:00 UTC at (16.6°N, 283.1°E)
+- **Forecast Period**: 7 days (through US landfall Oct 29-30)
+- **Baseline Track**: Aurora successfully captures Sandy's recurvature and northward track
+- **Perturbation Effects**: Both methods produce measurable track deviations
+- **Landfall Prediction**: Extended forecast captures US East Coast approach
+
+**Visualization Products**:
+- **Initial Perturbations**: Spatial patterns of temperature modifications
+- **Track Comparisons**: Baseline vs perturbed vs observed tracks
+- **Field Differences**: MSL pressure and wind changes at +24h forecast
+- **Complete Comparison**: All methods on single comprehensive map
+
+**Technical Files Generated**:
+- **Notebooks**: `era5_sandy_2012_init6.ipynb`, `era5_sandy_2012_init12.ipynb`
+- **Scripts**: `sandy_predictability_analysis.py` (7-day extended forecast)
+- **Experiments**: `sandy_perturb.ipynb` (complete perturbation experiment)
+- **Documentation**: `Perturbation_Methods_Documentation.md` (methodology comparison)
+- **Visualizations**: Multiple PNG outputs showing perturbation effects and track comparisons
+
+**Key Scientific Findings**:
+1. **Aurora TC Capability**: Successfully predicts historical hurricane outside WeatherBench2 timeframe
+2. **Extended Forecasting**: 7-day predictions capture major lifecycle transitions including landfall
+3. **Perturbation Sensitivity**: Localized atmospheric modifications produce measurable track changes
+4. **Physics Comparison**: Condensation warming vs energy-balanced seeding show different atmospheric responses
+5. **Methodology Validation**: Proper Aurora workflow maintained throughout perturbation experiments
+
+**Next Research Directions**:
+- **Systematic Analysis**: Apply perturbation methods to multiple historical hurricanes
+- **Parameter Sensitivity**: Test different perturbation magnitudes, locations, and spatial scales
+- **Physics Validation**: Compare perturbation effects with observational case studies
+- **Ensemble Forecasting**: Multiple perturbations for uncertainty quantification
+- **Cross-Basin Comparison**: Atlantic vs Pacific tropical cyclone perturbation responses
+
+**Research Status**: Hurricane Sandy infrastructure complete; perturbation methodology established and validated; ready for systematic multi-event analysis and scientific interpretation.
+
+---
+
 **Research Context**: This work is part of evaluating Aurora's predictability for extreme weather events, specifically tropical cyclones, as outlined in the paper development plan.
