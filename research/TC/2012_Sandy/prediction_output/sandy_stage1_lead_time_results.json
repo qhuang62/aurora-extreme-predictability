@@ -1,0 +1,41 @@
+{
+  "saved_at": "2025-11-13T15:05:52.272647",
+  "metadata": {
+    "event": "Hurricane Sandy 2012",
+    "stage": 1,
+    "strategy": "Variable initialization date (Strategy B)",
+    "target": "Oct 30, 2012 00:00 UTC"
+  },
+  "init_times": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "performance_by_init": {
+    "1UTC": {
+      "mean_error_km": 38.57861010417261,
+      "error_24h_km": 21.45017785217482,
+      "error_48h_km": null,
+      "error_72h_km": null
+    },
+    "3UTC": {
+      "mean_error_km": 77.30334544299221,
+      "error_24h_km": 33.776970578711214,
+      "error_48h_km": 11.119492664456596,
+      "error_72h_km": 216.670408571577
+    },
+    "5UTC": {
+      "mean_error_km": 63.63523064850064,
+      "error_24h_km": 65.85941129362774,
+      "error_48h_km": 14.794664778391768,
+      "error_72h_km": 72.5192047722172
+    },
+    "7UTC": {
+      "mean_error_km": 134.16952900033124,
+      "error_24h_km": 22.215537631025164,
+      "error_48h_km": 45.28247071843123,
+      "error_72h_km": 36.64139183340425
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "saved_at": "2025-11-13T16:39:53.913702",
+  "metadata": {
+    "event": "Cyclone Amphan 2020",
+    "stage": 1,
+    "strategy": "Variable initialization date",
+    "target": "May 20, 2020 12:00 UTC"
+  },
+  "init_times": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "performance_by_init": {
+    "1UTC": {
+      "mean_error_km": 22.646128011773413,
+      "error_24h_km": 56.71941503192568,
+      "error_48h_km": null,
+      "error_72h_km": null
+    },
+    "3UTC": {
+      "mean_error_km": 30.608771770246364,
+      "error_24h_km": 42.15107294471137,
+      "error_48h_km": 35.00971240362195,
+      "error_72h_km": 41.88122826569112
+    },
+    "5UTC": {
+      "mean_error_km": 59.97280041289737,
+      "error_24h_km": 24.52826466444134,
+      "error_48h_km": 66.93789859861083,
+      "error_72h_km": 61.934463345784565
+    },
+    "7UTC": {
+      "mean_error_km": 254.6196996972592,
+      "error_24h_km": 221.55613357119378,
+      "error_48h_km": 83.396194983419,
+      "error_72h_km": 234.3200890346972
+    }
+  }
+}

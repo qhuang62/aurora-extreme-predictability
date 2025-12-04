@@ -1,0 +1,218 @@
+{
+  "1": {
+    "config": {
+      "lead_days": 1,
+      "init_date": "2023-08-19",
+      "init_hour": "12",
+      "time_idx": 126,
+      "forecast_days": 8,
+      "steps": 31
+    },
+    "metrics": {
+      "timing": {
+        "onset_error_hours": 66.0,
+        "peak_error_hours": -6.0,
+        "recovery_error_hours": -30.0,
+        "forecast_onset": "2023-08-23 06:00:00",
+        "truth_onset": "2023-08-20T12:00:00.000000000",
+        "forecast_peak": "2023-08-23 06:00:00",
+        "truth_peak": "2023-08-23T12:00:00.000000000"
+      },
+      "rmse": {
+        "onset": 2.2801120281219482,
+        "peak": 5.275542259216309,
+        "recovery": 4.094886302947998
+      },
+      "spatial_extent": {
+        "forecast": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "truth": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "iou_scores": {
+          "30": 1.0,
+          "35": 1.0,
+          "40": 1.0
+        }
+      },
+      "duration": {
+        "forecast_hours": 6.0,
+        "truth_hours": 36.0,
+        "error_hours": -30.0
+      },
+      "intensity": {
+        "forecast_peak_temp": 30.366680145263672,
+        "truth_peak_temp": 32.4796028137207,
+        "bias": -2.1129226684570312
+      },
+      "pattern_correlation_at_peak": 0.8230179276423877
+    }
+  },
+  "7": {
+    "config": {
+      "lead_days": 7,
+      "init_date": "2023-08-13",
+      "init_hour": "12",
+      "time_idx": 102,
+      "forecast_days": 14,
+      "steps": 55
+    },
+    "metrics": {
+      "timing": {
+        "onset_error_hours": null,
+        "peak_error_hours": -78.0,
+        "recovery_error_hours": null,
+        "forecast_onset": null,
+        "truth_onset": "2023-08-20T12:00:00.000000000",
+        "forecast_peak": "2023-08-20 06:00:00",
+        "truth_peak": "2023-08-23T12:00:00.000000000"
+      },
+      "rmse": {
+        "onset": 4.322195053100586,
+        "peak": 2.3377277851104736,
+        "recovery": 1.6545913219451904
+      },
+      "spatial_extent": {
+        "forecast": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "truth": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "iou_scores": {
+          "30": 1.0,
+          "35": 1.0,
+          "40": 1.0
+        }
+      },
+      "duration": {
+        "forecast_hours": 0.0,
+        "truth_hours": 36.0,
+        "error_hours": -36.0
+      },
+      "intensity": {
+        "forecast_peak_temp": 29.262901306152344,
+        "truth_peak_temp": 32.4796028137207,
+        "bias": -3.2167015075683594
+      },
+      "pattern_correlation_at_peak": 0.7662988723334646
+    }
+  },
+  "14": {
+    "config": {
+      "lead_days": 14,
+      "init_date": "2023-08-06",
+      "init_hour": "12",
+      "time_idx": 74,
+      "forecast_days": 21,
+      "steps": 83
+    },
+    "metrics": {
+      "timing": {
+        "onset_error_hours": null,
+        "peak_error_hours": -150.0,
+        "recovery_error_hours": null,
+        "forecast_onset": null,
+        "truth_onset": "2023-08-20T12:00:00.000000000",
+        "forecast_peak": "2023-08-17 06:00:00",
+        "truth_peak": "2023-08-23T12:00:00.000000000"
+      },
+      "rmse": {
+        "onset": 1.784126877784729,
+        "peak": 1.7133078575134277,
+        "recovery": 3.3725152015686035
+      },
+      "spatial_extent": {
+        "forecast": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "truth": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "iou_scores": {
+          "30": 1.0,
+          "35": 1.0,
+          "40": 1.0
+        }
+      },
+      "duration": {
+        "forecast_hours": 0.0,
+        "truth_hours": 36.0,
+        "error_hours": -36.0
+      },
+      "intensity": {
+        "forecast_peak_temp": 28.6220703125,
+        "truth_peak_temp": 32.4796028137207,
+        "bias": -3.857532501220703
+      },
+      "pattern_correlation_at_peak": 0.9202074207497325
+    }
+  },
+  "21": {
+    "config": {
+      "lead_days": 21,
+      "init_date": "2023-07-30",
+      "init_hour": "12",
+      "time_idx": 46,
+      "forecast_days": 28,
+      "steps": 111
+    },
+    "metrics": {
+      "timing": {
+        "onset_error_hours": null,
+        "peak_error_hours": -198.0,
+        "recovery_error_hours": null,
+        "forecast_onset": null,
+        "truth_onset": "2023-08-20T12:00:00.000000000",
+        "forecast_peak": "2023-08-15 06:00:00",
+        "truth_peak": "2023-08-23T12:00:00.000000000"
+      },
+      "rmse": {
+        "onset": 3.859459161758423,
+        "peak": 3.5534722805023193,
+        "recovery": 2.8558623790740967
+      },
+      "spatial_extent": {
+        "forecast": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "truth": {
+          "30": 0.0,
+          "35": 0.0,
+          "40": 0.0
+        },
+        "iou_scores": {
+          "30": 1.0,
+          "35": 1.0,
+          "40": 1.0
+        }
+      },
+      "duration": {
+        "forecast_hours": 0.0,
+        "truth_hours": 36.0,
+        "error_hours": -36.0
+      },
+      "intensity": {
+        "forecast_peak_temp": 25.7640438079834,
+        "truth_peak_temp": 32.4796028137207,
+        "bias": -6.715559005737305
+      },
+      "pattern_correlation_at_peak": 0.857220985815534
+    }
+  }
+}

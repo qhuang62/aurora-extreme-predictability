@@ -8,9 +8,12 @@ This guide helps Claude Code understand the "Aurora Predictability for Weather E
 aurora-extreme-predictability/
 ├── CLAUDE.md                    # This guide (project context for Claude)
 ├── research/                    # Research work
-│   ├── paper-outline.md        # Paper structure and methodology
-│   ├── notebooks/              # Jupyter notebooks for analysis
-│   └── scripts/                # Python scripts for data/evaluation
+│   ├── RESEARCH_PLAN.md        # Master research plan and methodology
+│   ├── TC/                     # Tropical cyclone case studies
+│   ├── Freeze/                 # Freeze/cold snap case studies
+│   ├── AR/                     # Atmospheric river case studies
+│   ├── Precipitation/          # Precipitation extreme case studies
+│   └── shared/                 # Common utilities and scripts
 └── upstream-aurora/            # Original Microsoft Aurora codebase
     ├── aurora/                 # Core Aurora package
     ├── docs/                   # Aurora documentation and examples
@@ -121,11 +124,12 @@ The project focuses on four types of extreme events:
 
 ## Key Project Files
 
-- `paper-outline.md`: Detailed paper structure and methodology
-- `aurora/model/aurora.py`: Main Aurora model implementation  
-- `docs/models.md`: Complete model specifications and usage
-- `docs/example_era5.ipynb`: ERA5 data processing example
-- `aurora/batch.py`: Data batch handling and metadata
+- `research/RESEARCH_PLAN.md`: **Master research plan** - comprehensive methodology, timeline, and event selection
+- `research/TC/ProgressRecord.md`: TC analysis progress and findings
+- `upstream-aurora/aurora/model/aurora.py`: Main Aurora model implementation
+- `upstream-aurora/docs/models.md`: Complete model specifications and usage
+- `upstream-aurora/docs/example_era5.ipynb`: ERA5 data processing example
+- `upstream-aurora/aurora/batch.py`: Data batch handling and metadata
 
 ## Development Notes
 

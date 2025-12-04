@@ -1,0 +1,41 @@
+{
+  "saved_at": "2025-11-13T16:16:36.625421",
+  "metadata": {
+    "event": "Typhoon Hinnamnor 2022",
+    "stage": 1,
+    "strategy": "Variable initialization date",
+    "target": "Sep 6, 2022 18:00 UTC"
+  },
+  "init_times": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "performance_by_init": {
+    "1UTC": {
+      "mean_error_km": 0.0,
+      "error_24h_km": null,
+      "error_48h_km": null,
+      "error_72h_km": null
+    },
+    "3UTC": {
+      "mean_error_km": 132.07714803798936,
+      "error_24h_km": 22.477736634248636,
+      "error_48h_km": 95.54317861939076,
+      "error_72h_km": 673.1938779579833
+    },
+    "5UTC": {
+      "mean_error_km": 155.73622236300844,
+      "error_24h_km": 20.54614184158792,
+      "error_48h_km": 38.971123074545034,
+      "error_72h_km": 148.12338803967276
+    },
+    "7UTC": {
+      "mean_error_km": 170.73767758705418,
+      "error_24h_km": 42.02897061028271,
+      "error_48h_km": 34.12415710310825,
+      "error_72h_km": 99.09984604531991
+    }
+  }
+}
